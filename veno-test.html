@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/venobox/dist/venobox.min.css">
+    <style>
+        .small-img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex my-5">
+                <a href="img/1File%20.jpg" data-gall="one" data-title="San Kyi Tar" class="veno">
+                    <img src="img/1File%20.jpg" class="small-img" alt="">
+                </a>
+                <a href="img/2File%20.jpg" data-gall="one" class="veno">
+                    <img src="img/2File%20.jpg" class="small-img" alt="">
+                </a>
+                <a href="img/3File%20.jpg"  data-gall="one" class="veno">
+                    <img src="img/3File%20.jpg" class="small-img" alt="">
+                </a>
+                <a href="img/4File%20.jpg" data-gall="one" class="veno">
+                    <img src="img/4File%20.jpg" class="small-img" alt="">
+                </a>
+                <a href="img/5File%20.jpeg" data-gall="one" class="veno">
+                    <img src="img/5File%20.jpeg" class="small-img" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="col-12">
+            <h1>Hello! <span class="to-type"></span></h1>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/venobox/dist/venobox.min.js"></script>
+<script src="node_modules/typed.js/lib/typed.min.js"></script>
+<script >
+    let veno = new VenoBox({
+        selector : ".veno",
+        share : true,
+        titleattr : 'data-title',
+        titlePosition : "bottom"
+    })
+
+    var options = {
+        strings: ['Min Ga Lar <i>AAA</i> Par', 'San Kyi Tar Par'],
+        typeSpeed: 80,
+        // startDelay:3000,
+        loop : true,
+        loopCount : 3
+    };
+
+    var typed = new Typed('.to-type', options);
+</script>
+</body>
+</html>

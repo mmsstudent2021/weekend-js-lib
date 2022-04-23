@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="vh-100 d-flex flex-column justify-content-center align-items-center">
+                <h1 class="wow animate__slideInDown">This is One</h1>
+                <p class="text-center wow animate__slideInUp">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, voluptate. Adipisci deserunt dolorum earum explicabo fugit hic, ipsum, iure libero, nulla sit temporibus unde? Aliquid amet deleniti dolore nulla.
+                </p>
+            </div>
+            <div class="vh-100 d-flex bg-light flex-column justify-content-center align-items-center">
+                <h1 class="wow animate__slideInRight">This is Two</h1>
+                <p class="text-center text-center wow animate__slideInLeft">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, voluptate. Adipisci deserunt dolorum earum explicabo fugit hic, ipsum, iure libero, nulla sit temporibus unde? Aliquid amet deleniti dolore nulla.
+                </p>
+            </div>
+            <div class="vh-100 d-flex flex-column justify-content-center align-items-center">
+                <h1>This is Three</h1>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, voluptate. Adipisci deserunt dolorum earum explicabo fugit hic, ipsum, iure libero, nulla sit temporibus unde? Aliquid amet deleniti dolore nulla.
+                </p>
+            </div>
+            <div class="vh-100 d-flex bg-light flex-column justify-content-center align-items-center">
+                <h1>This is Four</h1>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, voluptate. Adipisci deserunt dolorum earum explicabo fugit hic, ipsum, iure libero, nulla sit temporibus unde? Aliquid amet deleniti dolore nulla.
+                </p>
+            </div>
+            <div class="vh-100  d-flex flex-column justify-content-center align-items-center">
+                <h1>This is Five</h1>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, voluptate. Adipisci deserunt dolorum earum explicabo fugit hic, ipsum, iure libero, nulla sit temporibus unde? Aliquid amet deleniti dolore nulla.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="node_modules/wow.js/dist/wow.min.js"></script>
+<script>
+
+    let wow = new WOW({
+        boxClass:     'wow',      // default
+        animateClass: 'animate__animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+    }).init();
+</script>
+</body>
+</html>
